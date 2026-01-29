@@ -40,11 +40,14 @@
 ```
 
 画像ごとのコメントや、その日のメモは meta ファイルに rough（ラフ）に記述
+
 この段階では文章の完成度は問わない
 
 ## 2. Google Drive へのアップロード
 画像ファイル
+
 メタファイル（summary / files / 画像説明）
+
 を Google Drive にアップロードする。
 
 Google Drive フォルダ:https://drive.google.com/drive/folders/129Us5IQ8k99n2ScO-u7SksI6N3hhx20G
@@ -52,32 +55,43 @@ Google Drive フォルダ:https://drive.google.com/drive/folders/129Us5IQ8k99n2S
 ## 3. Apps Script による draft HTML 生成
 
 Google Drive 上の画像・メタファイルを元に
+
 draft（下書き）HTML を自動生成する。
 
 Apps Script:https://script.google.com/home/projects/1IAJDpTKpyb_RUKdYCiTZ_kzzR0DQ6A6mxRa3CY5sxoyRzjgxmtOW3VRm/edit
 
 すべての元データ（画像・コメント）は Google Drive に残る
+
 ここで生成される HTML は「構造を確認するための原文」
 
 ## 4. 生成AIによる proposed HTML 作成
 
 draft HTML を ChatGPT または Gemini に渡す
+
 記事構成・流れ・表現を対話しながら調整
+
 proposed（原案）HTML を生成する
+
 ※ この段階では「完成させる」よりも全体構成を固めることを重視
 
 ## 5. finalized HTML の作成
 
 proposed HTML を自分で最終校正
+
 表現・構成・不要要素を調整
+
 finalized（成案）HTML として保存
+
 この時点で「公開可能な品質」とする。
 
 ## 6. デプロイ方針（要検討）
 
 内容がリリース可能になったら：
+
 デプロイスクリプトで画像を Google Drive から Git 管理へ移行
+
 デプロイ時に画像を Google Drive から WordPress サーバへアップロード
+
 HTML を WordPress に反映
 
 ※ 実装方法は今後検討
@@ -85,4 +99,5 @@ HTML を WordPress に反映
 ## 7. Git 管理の方針
 
 WordPress に公開されているものは 必ず Git に残す
+
 公開後の記事・画像は履歴管理・再利用・再デプロイ可能な状態にする
