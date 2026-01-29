@@ -101,3 +101,9 @@ HTML を WordPress に反映
 WordPress に公開されているものは 必ず Git に残す
 
 公開後の記事・画像は履歴管理・再利用・再デプロイ可能な状態にする
+
+# oceanmarinejp アカウントの wordpress
+
+WebUI:https://oceanmarinejp.wordpress.com/
+
+管理画面:https://oceanmarinejp.wordpress.com/wp-admin/index.php
